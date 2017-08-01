@@ -1,0 +1,34 @@
+<% include ../partials/boilerplate.ejs %>
+
+<div class='webDivContainer'>
+    
+    <%# final-adaquotes-mvc-full-crud for the forEach idea%>
+    
+    <% webDivsData.forEach(function(webDiv) { %>
+        
+        <div class='webDivItem imageDiv'>
+
+            <a class='titleDiv' href='<%= webDiv.urls %>'><%= webDiv.websitetitle %></a>
+
+            <form method='POST' action='/webDivs/<%= webDiv.id %>?_method=DELETE'>
+                <input type='submit' value='-' />
+            </form>
+
+            <a href='/webDivs/<%= webDiv.id %>'>Go to page</a>
+            <a href='/webDivs/edit/<%= webDiv.id %>'>Edit</a>
+
+            <a href='<%= webDiv.urls %>'>
+                <img class='webDiv'id= '<%= webDiv.urls %>' src=
+                '<%= webDiv.urlphoto %>' alt=''>
+            </a>
+        </div>
+        
+
+    <% }) %>
+
+
+
+
+</div>
+
+<% include ../partials/end.ejs %>

@@ -1,0 +1,29 @@
+            <!--https://www.w3schools.com/html/html_form_elements.asp
+            
+            http://stackoverflow.com/questions/22537399/html-submit-form-on-dropdown-change
+            -->
+            
+            
+
+<form>
+    <select id='categories' name='id' action='/webDivs/catagory/<%= categories_id.id %>' onchange='this.form.submit()'>
+        <option >-Choose Category-</option>
+        <option value='1'>Arts/Entertainment</option>
+        <option value='2'>Business</option>
+        <option value='3'>Computers/Tech</option>
+        <option value='4'>Games</option>
+        <option value='5'>Health</option>
+        <option value='6'>Home</option>
+        <option value='7'>News</option>
+        <option value='8'>Recreation</option>
+        <option value='9'>Reference</option>
+        <option value='10'>Regional/NYC</option>
+        <option value='11'>Science</option>
+        <option value='12'>Shopping</option>
+        <option value='13'>Society</option>
+        <option value='14'>Sports</option>
+        <option value='15'>Travel</option>
+        <option value='16'>World</option>
+        <option value='17'>~Other~</option>
+    </select>
+</form>

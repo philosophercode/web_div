@@ -1,0 +1,40 @@
+<% include ../partials/boilerplate %>
+
+<div>
+    <form method='POST' action='/webDivs'>
+        <input name='websitetitle' type='text'  placeholder='websiteTitle' required/>
+        
+
+        <select id='categories' name='categories_id' required>
+            <option >-Choose Category-</option>
+            <option value='1'>Arts/Entertainment</option>
+            <option value='2'>Business</option>
+            <option value='3'>Computers/Tech</option>
+            <option value='4'>Games</option>
+            <option value='5'>Health</option>
+            <option value='6'>Home</option>
+            <option value='7'>News</option>
+            <option value='8'>Recreation</option>
+            <option value='9'>Reference/Search</option>
+            <option value='10'>Regional/NYC</option>
+            <option value='11'>Science</option>
+            <option value='12'>Shopping</option>
+            <option value='13'>Society</option>
+            <option value='14'>Sports</option>
+            <option value='15'>Travel</option>
+            <option value='16'>World</option>
+            <option value='17'>~Other~</option>
+        </select>
+
+        <input name='urls' type='url'  placeholder='url' required/>
+        
+        <input name='descriptiontext' type='text'  placeholder='descriptionText' />
+
+        <input type='submit'  value='Add URL!' />
+        
+    </form>
+
+
+</div>
+
+<% include ../partials/end %>

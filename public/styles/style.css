@@ -1,0 +1,164 @@
+body {
+    font-family: Helvetica, sans-serif;
+    color: black;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p {
+    
+}
+
+header {
+    width: 100%;
+    height: 4em;
+    background-color: lightgrey;
+    padding: 1em;
+    top: 0;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    left: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    float: left;
+}
+
+nav {
+    position: fixed;
+    right: 30px;
+
+}
+
+form {
+    margin: 10px 0 10px 30px;
+}
+
+
+div {
+
+}
+
+.webDivContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    /*https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/*/
+    align-items: center;
+    align-content: center;
+    background-color: white;
+    /*background: url(http://www.highresolutiontextures.com/wp-content/uploads/2010/09/brick-wall-free-textures-01.jpg);
+    background-size: cover;*/
+}
+
+
+
+.webDivItem {
+    background-color: wheat;
+    border-radius: 10px;
+    /*border: 1px solid black;*/
+    width: 300px;
+    height: 300px;
+    /*background-image: linear-gradient(to bottom, black, transparent);*/
+    margin: 10px;
+    overflow: auto;
+
+    /*http://www.the-art-of-web.com/css/css-animation/*/
+    transition: .3s ease-in-out;
+}
+
+.webDivItem:hover {
+    /*https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_box-shadow*/
+    box-shadow: 0px 5px 10px 0px wheat;
+    /*box-shadow: 0px 5px 10px 0px #575757;*/
+    z-index: 2;
+    transform: scale(1.5);
+
+}
+
+a {
+    text-decoration-line: none;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+.titleDiv {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+}
+
+/*#webDiv1 {
+
+}
+
+#webDiv2 {
+    background-color: green;
+}
+
+#webDiv3 {
+    background-color: blue;
+}
+
+#webDiv4 {
+    
+}
+
+#webDiv5 {
+    background-color: green;
+}
+
+#webDiv6 {
+    background-color: blue;
+}
+
+#webDiv7 {
+    
+}
+
+#webDiv8 {
+    background-color: green;
+}
+
+#webDiv9 {
+    background-color: blue;
+}*/
+
+footer {
+    /*width: 100%;
+    height: 3em;
+    background-color: grey;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    line-height: 3;*/
+    
+    /*https://codepen.io/cbracco/pen/zekgx?editors=1100*/
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 1em;
+    background-color: grey;
+    text-align: center;
+    z-index: 1;
+}
+
+button {
+    background-color: maroon;
+}
